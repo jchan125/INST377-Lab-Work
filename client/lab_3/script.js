@@ -37,17 +37,11 @@ function moveToNextSlide() {
   updateSlidePosition(); // this is how you call a function within a function
 }
 function moveToPrevSlide() {
-  if (slidePosition = 0){
-    slidePosition === totalSlides - 1 ;
+  if (slidePosition === 0){
+    slidePosition = totalSlides - 1 ;
   } else {
     slidePosition -= 1;
   }
-  /*
-    add an if statement here that checks
-    if you're already at the first index position for an array
-    and if so, sets your slidePosition to the last slide position in totalSlides
-    if not, set the slidePosition to the current position minus one
-  */
   updateSlidePosition();
 }
 
