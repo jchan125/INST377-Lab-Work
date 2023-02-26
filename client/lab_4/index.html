@@ -8,25 +8,32 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header box">
         <h1>Janet Chan INST377 Labs</h1>
       </header>
       <div class="container">
-        <div class="left_section">
+        <div class="left_section box">
           <h3>Form Inputs</h3>
-          <form action="/api" class="box">
-            <label for="resto"></label>
-            <input type="text" name="resto" id="resto" />
-            <button type="submit">Submit</button>
+          <form
+            action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json"
+            class="box"
+          >
+              <label for="resto">Resturant Name</label>
+              <input type="text" name="" id="resto" />
+              <button type="submit">Submit</button>
           </form>
         </div>
-        <div class="right_section">
+        <div class="right_section box">
           <h3>Local Resturant</h3>
-          <form action="/api" class="box">  
-          <div class="resturant_list">A list of local resturants from an API</div>
-        </form>
+          <div class="resturant_list box">
+            A list of local resturants from an API
+          </div>
         </div>
       </div>
+      <footer class="footer box" r>
+        jchan125
+        <a href="http://github.com/jchan125">jchan125</a>
+      </footer>
     </div>
   </body>
 </html>

@@ -8,7 +8,7 @@
 */
 
 html {
-  background-color: #fff;
+  background-color: #82b9b0;
   font-size: 16px;
   min-width: 300px;
   overflow-x: hidden;
@@ -30,7 +30,7 @@ body {
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: rgb(237,238,201);
+  background-color: #EDEEC9;
 }
 
 
@@ -46,7 +46,7 @@ h2, h3 {
 }
 
 form {
-  accent-color: hsla(120, 100%, 50%, 0.482);
+  accent-color: hsl(227, 24%, 51%);
 }
 
 /*
@@ -92,8 +92,8 @@ form {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #DDE7C7;
-  color: #131212;
+  background-color: #A5C882;
+  color: #ffffff;
 
   /* shapes */
   border-radius: 6px;
@@ -103,7 +103,7 @@ form {
 
 
   /* box-shadows are fancy */
-  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  box-shadow: 0 0.5em 1em -0.125em #c3d898a1, 0 0 0 1px #306BAC;
 }
 
 
@@ -117,7 +117,7 @@ form {
 */
 
 .box {
-  background-color: rgba(237, 238, 201, 0.8);
+  background-color: #7f9bb9;
   border: 2px dashed;
   border-radius: 4px;
 
@@ -135,7 +135,7 @@ form {
 }
 
 .right_section {
-  background-color: rgba(191,216,189);
+  background-color: rgb(183, 196, 155);
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
@@ -153,13 +153,13 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: rgba(119, 191, 163, 0.8);
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .footer a {
-  color: rgba(255, 224, 138, 1);
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 
@@ -170,9 +170,9 @@ form {
 */
 .footer a:hover {
   /* Hue, saturation, luminosity, alpha */
-  background-color: hsla(0, 0%, 90%, 0.15);
+  background-color: hsla(218, 19%, 52%, 0.114);
   /* red, green, blue, alpha */
-  color: rgb(246, 169, 93);
+  color: rgb(122, 186, 201);
   text-decoration: none;
 }
 
@@ -254,19 +254,19 @@ div.carousel {
   height: 45px;
   padding: 10px;
   line-height: 0; /* This centers a button's text! */
-  border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
+  /*border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
 }
 
 .prev:focus,
 .next:focus {
   margin: 0;
-  border-color: rgb(102, 140, 211);
+  border-color: #B7D3F2;
   /* Pick a good border colour and check out how it works with your buttons */
 }
 
 .prev:hover,
 .next:hover {
-  background-color: rgb(188, 171, 240);
+  background-color: #AFAFDC;
   /* Pick a good background colour for your hover pseudoclass */
 }
 
@@ -304,7 +304,7 @@ form label {
   /* Rules in here will only apply when a screen is the correct size */
   /* check it out by using your developer tools to shrink your screen-size */
   .container {
-    background-color: rgba(75, 84, 59, 0.65);
+    background-color: rgba(167, 183, 163, 0.65);
     flex-direction: column;
     justify-content: center;
     align-items: center;
