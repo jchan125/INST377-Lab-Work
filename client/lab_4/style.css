@@ -140,7 +140,6 @@ form {
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
-  max-width: 450px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -264,7 +263,7 @@ div.carousel {
 .prev:focus,
 .next:focus {
   margin: 0;
-  border-color: #B7D3F2;
+  border-color: #0c4688;
   /* Pick a good border colour and check out how it works with your buttons */
 }
 
