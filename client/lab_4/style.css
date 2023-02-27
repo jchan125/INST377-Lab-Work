@@ -74,10 +74,10 @@ form {
 }
 
 .header {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1.5rem;
+  padding-top: 0rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
 }
 
 
@@ -96,6 +96,7 @@ form {
   color: #ffffff;
 
   /* shapes */
+  border: 2px dashed;
   border-radius: 6px;
   font-size: 1.5rem;
   padding: 1.25rem;
@@ -140,6 +141,7 @@ form {
   margin: 1rem;
   align-items: center;
   max-width: 450px;
+  justify-content: center;
   display: flex;
   flex-direction: column;
 }
@@ -151,6 +153,8 @@ form {
 */
 
 .footer {
+  border: 2px dashed;
+  border-radius: 4px;
   flex-shrink: 0;
   padding: 1rem;
   background-color: rgba(119, 191, 163, 0.8);
@@ -321,6 +325,8 @@ form label {
 
   .box {
     width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
     width: fill-available;
     align-items:flex-start;
   }
