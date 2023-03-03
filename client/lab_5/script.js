@@ -1,8 +1,3 @@
-/*
-  Hook this script to index.html
-  by adding `<script src="script.js">` just before your closing `</body>` tag
-*/
-
 /* A quick filter that will return something based on a matching input */
 function filterList(list, query) {
   return list.filter((item) => {
@@ -10,13 +5,6 @@ function filterList(list, query) {
     const lowerCaseQuery = query.toLowerCase();
     return lowerCaseName.includes(lowerCaseQuery);
   })
-  /*
-    Using the .filter array method, 
-    return a list that is filtered by comparing the item name in lower case
-    to the query in lower case
-
-    Ask the TAs if you need help with this
-  */
 }
 
 async function mainEvent() { // the async keyword means we can make API requests
