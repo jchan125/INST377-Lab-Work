@@ -62,7 +62,6 @@ function markerPlace(array, map) {
 async function mainEvent() {
   // the async keyword means we can make API requests
   const mainForm = document.querySelector(".main_form"); // This class name needs to be set on your form before you can listen for an event on it
-  const filterButton = document.querySelector("#filter_button");
   const loadDataButton = document.querySelector("#data_load");
   const clearDataButton = document.querySelector("#data_clear");
   const generateListButton = document.querySelector("#generate");
@@ -80,7 +79,6 @@ async function mainEvent() {
     generateListButton.classList.remove("hidden");
   }
 
-  let storedList = [];
   let currentList = []; // this is "scoped" to the main event function
 
   /* We need to listen to an "event" to have something happen in our page - here we're listening for a "submit" */
@@ -108,22 +106,9 @@ async function mainEvent() {
     //console.table(storedList);
   });
 
-  filterButton.addEventListener("click", (event) => {
-    console.log("clicked FilterButton");
-
-    const formData = new FormData(mainForm);
-    const formProps = Object.fromEntries(formData);
-
-    console.log(formProps);
-    const newList = filterList(currentList, formProps.resto);
-
-    console.log(newList);
-    injectHTML(newList);
-  });
-
   generateListButton.addEventListener("click", (event) => {
     console.log("generate new list");
-    currentList = cutRestaurantList(storedList);
+    currentList = cutRestaurantList(parsedData);
     console.log(currentList);
     injectHTML(currentList);
     markerPlace(currentList, carto);
